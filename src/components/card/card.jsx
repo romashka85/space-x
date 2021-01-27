@@ -30,7 +30,7 @@ const Card = ({launch}) => {
         <p>mission name: {launch.mission_name}</p>
         <p>launch date: {year+'-' + month + '-'+dt}</p>
         {/* <p>Place of launch</p> */}
-				<button className='show-more-button' onClick={showDetails ? hideDetails : displayDetails}>Show details</button>ye
+				<button className='show-more-button' onClick={showDetails ? hideDetails : displayDetails}>Show details</button>
 				<div className='show-more-info' style={{display: showDetails ? 'block' : 'none'}}>
 					<h2>launch details</h2>
 					<div className='details'>{launch.details}</div>
