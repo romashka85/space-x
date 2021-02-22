@@ -1,24 +1,21 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
+import {  Switch, Route, Link } from "react-router-dom";
 
-import CardList from './components/card-list/card-list';
+import LaunchList from './components/launch-list/launch-list';
+import Header from './components/header/header';
+import LaunchDetail from './components/launch-detail/launch-detail';
+
 import './App.css';
 
 const App = () => {
-const [launches, setLaunches] = useState([]);
-
-useEffect(() => {
-  const fetchFunc = async () => {
-    const response = await fetch(`https://api.spacexdata.com/v3/launches`);
-    const resJson = await response.json();
-    setLaunches(resJson);
-  }
-  fetchFunc();
-}, [])
 
   return (
     <div className="App">
-      <h1>Space-X Project</h1>      
-      <CardList launches={launches}/>    
+        <Header />        
+          <Switch>
+            <Route exact path='/' component={LaunchList}/>
+            <Route path="/launch/:id" component={LaunchDetail}/>
+          </Switch>  
     </div>
   )
 }

@@ -1,0 +1,31 @@
+.header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 51px;
+  color: #e2ebf1;
+  padding: 0.3em 0 0.3em 0;
+  background: #0E2134;
+  border-bottom: 1px solid #005388;
+}
+
+.header-img {
+  background-image: url(../../img/space-x_header-img.jpg);  
+  background-repeat: no-repeat;  
+  background-position-x: left;
+  background-position-y: center;
+  background-size: cover;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.header-box {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  width: 25em;
+  padding-bottom: 10em;
+  font-size: 21px;
+  line-height: 1.8;
+  font-weight: 700;
+}
