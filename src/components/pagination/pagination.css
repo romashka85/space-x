@@ -1,0 +1,28 @@
+.pagination {
+  font: 87.5%/1.666 'Noto Sans KR',sans-serif;
+  color: #e4b431;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4em;
+  padding-top: 1em;
+}
+
+.pagination div:first-child {
+  margin-right: 1em;
+}
+
+.pagination button {
+  margin-right: 1em;
+  padding: 10px 20px;
+  background: linear-gradient(to top, rgba(0, 83, 136, 0.65) 0%, rgba(0, 83, 136, 0) 100%);
+  border: 1px solid #005388;
+  color: rgb(204, 204, 204);    
+  outline: none;
+}
+
+.pagination button:hover {
+  color: #e4b431;
+  border: 1.5px solid #e4b431;
+  cursor: pointer;  
+}

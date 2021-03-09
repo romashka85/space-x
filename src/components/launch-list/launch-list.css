@@ -1,94 +1,97 @@
 .launch-list {
-    width: 80vw;
-    margin: 2em auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 35px;  
-    font: 87.5%/1.666 'Noto Sans KR',sans-serif;
-  }
-  
-  .launch-card {
-    padding: 1em;
-    background: linear-gradient(to top, rgba(0, 83, 136, 0.65) 0%, rgba(0, 83, 136, 0) 100%);
-    border: 1px solid #005388;
-    color: rgb(204, 204, 204);
-    font-family: 'Noto Sans KR', sans-serif;
-  }
+  width: 80vw;
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 35px;
+  font: 87.5%/1.666 'Noto Sans KR', sans-serif;
+}
 
-  .launch-card-header {
-    display: flex;
-    height: 10em;
-  }
-  
-  .card-header-img img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 120px;
-    height: 120px;
-  }
+.launch-card {
+  padding: 1em;
+  background: linear-gradient(
+    to top,
+    rgba(0, 83, 136, 0.65) 0%,
+    rgba(0, 83, 136, 0) 100%
+  );
+  border: 1px solid #005388;
+  color: rgb(204, 204, 204);
+  font-family: 'Noto Sans KR', sans-serif;
+}
 
-  .card-header-img{
-   padding: 1em;
-  }
+.launch-card-header {
+  display: flex;
+  height: 10em;
+}
 
-  .card-header-details {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    padding-bottom: 2em;
-    margin-left: 1em;
-    font-size: 18px;
-  }
-  .card-header-details div:first-child {
-    padding-bottom: 0.5em;
-    color: #e4b431;
-  }
+.card-header-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  height: 120px;
+}
 
-  .launch-card-details p {
-    padding: 0 1.5em;
-    text-align: left;
-    font-weight: 600;
-  }
+.card-header-img {
+  padding: 1em;
+}
 
-  .launch-card-details {
-    margin-bottom: 0.5em;
-  }
+.card-header-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 2em;
+  margin-left: 1em;
+  font-size: 18px;
+}
+.card-header-details div:first-child {
+  padding-bottom: 0.5em;
+  color: #e4b431;
+}
 
-  .card-details-content {
-    overflow: hidden;
-    height: 50px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;    
-  }
+.launch-card-details p {
+  padding: 0 1.5em;
+  text-align: left;
+  font-weight: 600;
+}
 
-  .card-details-button {
-    text-align: center;
-    margin-top: 2em;    
-    background: none;    
-    border: 1.5px solid #e4b431; 
-    text-transform: uppercase;
-    outline: none;
-    
-  }
+.launch-card-details {
+  margin-bottom: 0.5em;
+}
 
-  .card-details-button a {
-    display: block;
-    color: #e4b431;
-    text-decoration: none;
-    width: 100%;
-    padding: 1em 6em;
-  }
+.card-details-content {
+  overflow: hidden;
+  height: 50px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 
-  .card-details-button a:hover {
-    color: white;
-    text-decoration: none;
-  }
+.card-details-button {
+  text-align: center;
+  margin-top: 2em;
+  background: none;
+  border: 1.5px solid #e4b431;
+  text-transform: uppercase;
+  outline: none;
+}
 
-  .card-details-button:hover {
-    color: white;
-    border: 1.5px solid white;  
-    cursor: pointer;          
-  }
+.card-details-button a {
+  display: block;
+  color: #e4b431;
+  text-decoration: none;
+  width: 100%;
+  padding: 1em 6em;
+}
+
+.card-details-button a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.card-details-button:hover {
+  color: white;
+  border: 1.5px solid white;
+  cursor: pointer;
+}
